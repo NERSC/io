@@ -4,7 +4,7 @@
 #SBATCH -p regular
 
 #### name of the training reservation
-#SBATCH --reservation="atpesctrain"
+##SBATCH --reservation="atpesct18-haswell"
 
 #### How many nodes?
 #SBATCH -N 1
@@ -23,7 +23,7 @@
 
 
 #### Create a persistent reservation (PR). Choose what size and name you want to give it. Note that you MUST change this name! Every PR name needs to be unique - if there already exists a PR of this name the job will fail.  
-#BB create_persistent name=my_persistent_reservation capacity=300GB access_mode=striped type=scratch 
+#BB create_persistent name=my_persistent_reservation_stchar capacity=40GB access_mode=striped type=scratch 
                
 
 

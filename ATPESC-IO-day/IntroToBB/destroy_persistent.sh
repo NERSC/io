@@ -4,7 +4,7 @@
 #SBATCH -p regular
 
 #### name of the training reservation
-#SBATCH --reservation="atpesctrain"
+##SBATCH --reservation="atpesctrain"
 
 #### How many nodes?
 #SBATCH -N 1
@@ -23,7 +23,7 @@
 
 
 #### Destroy the persistent reservation. All data on the reservation will be lost. Remember to use the correct reservation name! 
-#BB destroy_persistent name=my_persistent_reservation
+#BB destroy_persistent name=my_persistent_reservation_stchar
 
 
 

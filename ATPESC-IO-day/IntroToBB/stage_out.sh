@@ -4,7 +4,7 @@
 #SBATCH -p regular
 
 #### name of the training reservation
-#SBATCH --reservation="atpesctrain"
+#SBATCH --reservation="atpesc18-haswell"
 
 #### How many nodes?
 #SBATCH -N 1
@@ -21,11 +21,11 @@
 #### Set the output file name
 #SBATCH -o "job_stage_out.log"
 
-#### Request a 200GB scratch allocation, striped over BB nodes 
-#DW jobdw capacity=200GB access_mode=striped type=scratch pool=wlm_pool
+#### Request a 20GB scratch allocation, striped over BB nodes 
+#DW jobdw capacity=20GB access_mode=striped type=scratch pool=wlm_pool
 
 #### Stage a file out of the BB onto scratch. 
-#DW stage_out destination=/global/cscratch1/sd/djbard/train/csgf-hpc-day/IntroToBB/data/hello.txt source=$DW_JOB_STRIPED/hello.txt type=file
+#DW stage_out destination=/global/cscratch1/sd/jialin/io/ATPESC-IO-day/IntroToBB/data/hello.txt source=$DW_JOB_STRIPED/hello.txt type=file
 
 
 

@@ -4,7 +4,7 @@
 #SBATCH -p regular
 
 #### name of the training reservation
-#SBATCH --reservation="atpesc18-haswell"
+##SBATCH --reservation="atpesc18-haswell"
 
 #### How many nodes?
 #SBATCH -N 1
